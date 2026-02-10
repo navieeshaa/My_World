@@ -6,12 +6,13 @@
 <title>For You ALEENAAAAAAAAAA!!!!! 💖</title>
 <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 <style>
+/* BODY */
 body {
   margin:0;
   height:100vh;
   overflow:hidden;
   font-family: 'Shadows Into Light', cursive;
-  background-image: url('we.png.jpeg'); /* YOUR IMAGE */
+  background-image: url('we.png.jpeg'); /* Corrected image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -104,7 +105,7 @@ button:hover { transform: scale(1.08); background: rgba(255,255,255,0.35); }
 <body>
 
 <audio id="music" loop>
-  <source src="music.mp3.mp3" type="audio/mpeg">
+  <source src="music.mp3.mp3" type="audio/mpeg"> <!-- Corrected -->
 </audio>
 
 <div id="particleContainer"></div>
@@ -146,7 +147,7 @@ I love you more than anything Maaduuuu🥹💍🤍 ....</p>
 <div id="scene4" class="scene final" onclick="nextScene(5)">
   <h1>For You 💌</h1>
   <p>Happy Valentine’s Day, my love 🥹💍🤍
-I don’t think you realize how much you’ve changed my life just by being in it. The way you smile, the way you understand me without words, the way you make even ordinary moments feel special ,all of it means more to me than I can ever explain.
+I don’t think you realize how much you’ve changed my life just by being in it. The way you smile, the way you understand me without words, the way you make even ordinary moments feel special, all of it means more to me than I can ever explain.
 With you, love feels easy and real. You make me feel safe, seen, and cared for in a way I never knew I needed. Every day I find new reasons to be grateful for you, and every day I’m reminded how lucky I am to love someone like you.
 No matter where life takes us, I promise to stand by you, to support you, to laugh with you, and to hold your hand through everything even in the good days, the hard days, and all the little moments in between.
 Today isn’t just about flowers or words. It’s about us. And if I had to choose again and again, I would still choose you always 🥹🤍
@@ -160,7 +161,7 @@ Happy Valentine’s Day, my heart 💌</p>
   <div class="gallery">
     <img src="we2.png.jpeg" alt="Photo 1">
     <img src="we3.png.jpeg" alt="Photo 2">
-    <img src="we4,png.jpeg" alt="Photo 3">
+    <img src="we4.png.jpeg" alt="Photo 3">
     <img src="we5.png.jpeg" alt="Photo 4">
     <img src="we6.png.jpeg" alt="Photo 5">
     <img src="we7.png.jpeg" alt="Photo 6">
@@ -168,8 +169,7 @@ Happy Valentine’s Day, my heart 💌</p>
   </div>
   <div class="tap">Tap anywhere ✨</div>
   <p>Will You Be My Valentine Forever Aleena🥹💍🤍? 
-<a href="https://wa.me/qr/XWST22WF2JELD1" target="_blank">Click here tell how was this Valentine's Day gift for youn !!!</a></p>
-</div>
+<a href="https://wa.me/qr/XWST22WF2JELD1" target="_blank">Click here to tell me how was this Valentine's Day gift for you!!!</a></p>
 </div>
 
 <script>
@@ -192,7 +192,6 @@ function burstParticles(){for(let i=0;i<30;i++){const e=document.createElement("
 function openEnvelopeHearts(){const envelope=document.getElementById("envelope");envelope.classList.add("open");const heartCount=25;for(let i=0;i<heartCount;i++){const h=document.createElement("div");h.className="heart-burst";h.innerText="💖";const dx=(Math.random()-0.5)*200+"px";const dy=(Math.random()-0.5)*200+"px";h.style.setProperty('--dx',dx);h.style.setProperty('--dy',dy);h.style.left="50%";h.style.top="50%";envelope.appendChild(h);setTimeout(()=>h.remove(),1500);}}
 setInterval(()=>{const e=document.createElement("div");e.className="particle";e.innerText=emojis[Math.floor(Math.random()*emojis.length)];e.style.left=Math.random()*100+"vw";e.style.top="-50px";e.style.fontSize=14+Math.random()*24+"px";e.style.animationDuration=5+Math.random()*5+"s";container.appendChild(e);setTimeout(()=>e.remove(),10000);},250);
 setInterval(()=>{const s=document.createElement("div");s.className="sparkle";s.innerText=sparkles[Math.floor(Math.random()*sparkles.length)];s.style.left=Math.random()*100+"vw";s.style.top="100vh";s.style.fontSize=6+Math.random()*14+"px";s.style.animationDuration=6+Math.random()*6+"s";container.appendChild(s);setTimeout(()=>s.remove(),12000);},200);
-document.addEventListener("click",e=>{const glow=document.createElement("div");glow.className="neon-glow";glow.style.left=e.clientX-9+"px";glow.style.top=e.clientY-9+"px";document.body.appendChild(glow);setTimeout(()=>glow.remove(),900);});
 let lastTrail=0;function trailEffect(x,y){const now=Date.now();if(now-lastTrail<25)return;lastTrail=now;const t=document.createElement("div");t.className="trail";t.style.left=x-5+"px";t.style.top=y-5+"px";document.body.appendChild(t);setTimeout(()=>t.remove(),800);}
 document.addEventListener("mousemove",e=>trailEffect(e.clientX,e.clientY));
 document.addEventListener("touchmove",e=>{const touch=e.touches[0];trailEffect(touch.clientX,touch.clientY);});
